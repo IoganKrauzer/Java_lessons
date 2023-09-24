@@ -16,7 +16,7 @@ public class TelephoneBook {
         }
     }
 
-    public static void showContactsInOrder(Map<String, ArrayList<Integer>> hm) {
+    public static void showContacts(Map<String, ArrayList<Integer>> hm) {
         for (var item : hm.entrySet()) {
             String name = item.getKey();
             String value = item.getValue().toString()
@@ -35,9 +35,7 @@ public class TelephoneBook {
         addContact("Света", 1243534, telephBook);
         addContact("Тамара", 4323425, telephBook);
         addContact("Кристина", 3685353, telephBook);
-        System.out.println();
-        showContactsInOrder(telephBook);
-
+        showContacts(telephBook);
     }
 
 }
