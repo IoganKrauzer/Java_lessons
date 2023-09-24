@@ -35,6 +35,7 @@ public class TelephoneBook {
         addContact("Света", 1243534, telephBook);
         addContact("Тамара", 4323425, telephBook);
         addContact("Кристина", 3685353, telephBook);
+        System.out.println();
         showContacts(telephBook);
     }
 
