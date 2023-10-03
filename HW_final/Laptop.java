@@ -50,23 +50,23 @@ public class Laptop {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public int getRam() {
-        return this.ram;
+        return ram;
     }
 
     public int getHdd() {
-        return this.hdd;
+        return hdd;
     }
 
     public String getOs() {
-        return this.os;
+        return os;
     }
 
     public String getColor() {
-        return this.color;
+        return color;
     }
 
 }
