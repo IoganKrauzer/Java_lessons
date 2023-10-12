@@ -2,7 +2,7 @@ package OOP_Java.seminar_3;
 
 
 
-public class Student extends User{
+public class Student extends User implements Comparable<Student>{
     private Long studentId;
 
     public Student(String firstName, String secondName, String lastName, String dateOfBirth, Long studentId) {
@@ -26,6 +26,23 @@ public class Student extends User{
         "Last name: " + super.getLastName() + " / " +
         "Date of birth: " + super.getDateOfBirth() + " / " +
         "Student id: " + studentId + " }";
+    }
+
+    // @Override
+    // public int compareTo(Student o) {
+    //     return this.studentId.compareTo(o.studentId);
+    // }
+
+    @Override
+    public int compareTo(Student o){
+        if (this.studentId == o.studentId){
+            return 0;
+        }
+        if (this.studentId < o.studentId){
+            return -1;
+        }
+        return 1;
+        
     }
         
         
